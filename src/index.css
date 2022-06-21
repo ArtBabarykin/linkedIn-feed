@@ -15,3 +15,68 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+@media only screen and (max-width: 1100px) {
+  .app__body .feed {
+    width: 80%;
+  }
+  .app__body .widgets {
+    display: none;
+  }
+  .app__body .sidebar {
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header .header__container .header__right {
+    display: none;
+  }
+  .app__body {
+    flex-direction: column;
+    align-items: center;
+    margin-top: -1px;
+  }
+  .app__body .sidebar {
+    width: 90%;
+    margin-top: -1px;
+    margin-left: 0;
+
+    top: 60px;
+    z-index: 100;
+  }
+  .app__body .sidebar__top img {
+    border-radius: 0;
+  }
+  .app__body .feed {
+    width: 90%;
+    margin-top: -1px;
+  }
+  .app__body .sidebar__top {
+    border: none;
+  }
+  .app__body .sidebar__bottom,
+  .app__body .sidebar__stats {
+    display: none;
+  }
+  .app__body .feed {
+    margin-top: 138px;
+  }
+  .app__body .feed__inputContainer {
+    position: fixed;
+    top: 195px;
+    z-index: 1000;
+    width: 90%;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+    border-radius: 0;
+  }
+
+  .app__body .post {
+    border-radius: 0;
+  }
+  .app__body .feed__inputContainer .inputOption h4,
+  .app__body .post .post__buttons .inputOption h4 {
+    display: none;
+  }
+}
